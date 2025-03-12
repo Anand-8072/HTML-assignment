@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denim Jacket - StyleHub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="main.html">StyleHub</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="main.html">Home</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="#"><span class="icon">🔍</span></a>
+          <a href="#"><span class="icon">👤</span></a>
+          <a href="#"><span class="icon">🛒</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-detail">
+        <div class="product-images">
+          <img
+            src="/denim.jpeg"
+            alt="Denim Jacket"
+            class="main-image"
+          />
+        </div>
+        <div class="product-info">
+          <h1>Denim Jacket</h1>
+          <p class="price">$59.99</p>
+          <div class="product-description">
+            <p>
+              A classic denim jacket that never goes out of style. Perfect for
+              layering in any season, this versatile piece will become a staple
+              in your wardrobe.
+            </p>
+            <ul>
+              <li>Premium denim material</li>
+              <li>Button-up front</li>
+              <li>Multiple pockets</li>
+              <li>Adjustable cuffs</li>
+            </ul>
+          </div>
+          <div class="product-options">
+            <div class="size-selection">
+              <label for="size">Size:</label>
+              <select id="size" name="size">
+                <option value="s">S</option>
+                <option value="m" selected>M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+            <div class="color-selection">
+              <label>Color:</label>
+              <div class="color-options">
+                <span class="color-option blue selected"></span>
+                <span class="color-option black"></span>
+                <span class="color-option gray"></span>
+              </div>
+            </div>
+            <div class="quantity">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                value="1"
+              />
+            </div>
+          </div>
+          <a href="#" class="btn-primary">Buy Now</a>
+          <a href="#" class="btn-secondary">Add to Cart</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About StyleHub</h3>
+          <p>We offer the latest fashion trends at affordable prices.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@stylehub.com</p>
+          <p>Phone: (123) 456-7890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 StyleHub. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

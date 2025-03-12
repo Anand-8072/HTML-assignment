@@ -1,0 +1,420 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #3a7bc8;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: white;
+  color: #4a90e2;
+  border: 2px solid #4a90e2;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #f5f9ff;
+}
+
+/* Sign Up Page */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f9ff;
+  padding: 20px;
+}
+
+.signup-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.signup-form h1 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.signup-form h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-link a {
+  color: #4a90e2;
+  font-weight: 600;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4a90e2;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #4a90e2;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f5f9ff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+/* Products Section */
+.products {
+  padding: 60px 20px;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  padding: 16px 16px 8px;
+  font-size: 18px;
+}
+
+.price {
+  padding: 0 16px 16px;
+  font-weight: 600;
+  color: #4a90e2;
+}
+
+/* Product Detail Page */
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.product-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.thumbnail-images {
+  display: flex;
+  gap: 10px;
+}
+
+.thumbnail-images img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail-images img:hover {
+  border-color: #4a90e2;
+}
+
+.product-info h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.product-info .price {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.product-description {
+  margin-bottom: 30px;
+}
+
+.product-description p {
+  margin-bottom: 15px;
+}
+
+.product-description ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.product-options {
+  margin-bottom: 30px;
+}
+
+.size-selection,
+.color-selection,
+.quantity {
+  margin-bottom: 20px;
+}
+
+.size-selection label,
+.color-selection label,
+.quantity label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+select,
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.color-option.selected {
+  border-color: #4a90e2;
+}
+
+.color-option.black {
+  background-color: #000;
+}
+
+.color-option.white {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.color-option.blue {
+  background-color: #4a90e2;
+}
+
+.color-option.red {
+  background-color: #e24a4a;
+}
+
+.color-option.gray {
+  background-color: #888;
+}
+
+.color-option.pink {
+  background-color: #e24a93;
+}
+
+.color-option.green {
+  background-color: #4ae28a;
+}
+
+.color-option.yellow {
+  background-color: #e2c84a;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 60px 20px 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #4a90e2;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-form {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
